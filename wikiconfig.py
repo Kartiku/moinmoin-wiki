@@ -107,7 +107,7 @@ class Config(multiconfig.DefaultConfig):
     # IMPORTANT: grant yourself admin rights! replace YourName with
     # your user name. See HelpOnAccessControlLists for more help.
     # All acl_rights_xxx options must use unicode [Unicode]
-    #acl_rights_before = u"mmAdmin:read,write,delete,revert,admin"
+    acl_rights_before = u"mmAdmin:read,write,delete,revert,admin"
 
     # This is the default ACL that applies to pages without an ACL.
     # Adapt it to your needs, consider using an EditorGroup.
