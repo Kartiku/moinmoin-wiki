@@ -111,7 +111,7 @@ class Config(multiconfig.DefaultConfig):
 
     # This is the default ACL that applies to pages without an ACL.
     # Adapt it to your needs, consider using an EditorGroup.
-    acl_rights_default = u"Trusted:read,write,delete,revert Known:read All:read,write,delete,revert"
+    acl_rights_default = u"Trusted:read,write,delete,revert Known:read -All:read"
 
     # The default (ENABLED) password_checker will keep users from choosing too
     # short or too easy passwords. If you don't like this and your site has
