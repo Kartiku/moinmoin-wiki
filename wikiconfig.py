@@ -93,6 +93,8 @@ class Config(multiconfig.DefaultConfig):
     # This is checked by some rather critical and potentially harmful actions,
     # like despam or PackageInstaller action:
     superuser = [u"mmAdmin", ]
+    
+    actions_excluded = multiconfig.DefaultConfig.actions_excluded + ['newaccount']
 
     # Some actions are by default only enabled for superusers and disabled
     # for everybody else.
